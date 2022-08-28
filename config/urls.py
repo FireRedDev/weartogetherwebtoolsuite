@@ -15,6 +15,7 @@ urlpatterns = [
     # User management
     path("users/", include("wear_together_toolsuite.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path('report/', include("report.urls")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

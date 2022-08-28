@@ -78,6 +78,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "wear_together_toolsuite.users",
+    "report"
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -275,3 +276,7 @@ SOCIALACCOUNT_FORMS = {"signup": "wear_together_toolsuite.users.forms.UserSocial
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
