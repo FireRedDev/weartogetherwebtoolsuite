@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Report Generated {% endblock %}
+
+{% block content %}
+
+<details>
+<summary>
+<h1>Result Table</h1>
+</summary>
+{{resulttable |safe}}
+</details>
+
+<details>
+<summary>
+<h1>Pivot Table</h1>
+</summary>
+{{pivottable |safe}}
+</details>
+
+
+<details>
+<summary>
+<h1>List Pivot</h1>
+</summary>
+{{listpivot |safe}}
+</details>
+
+{% endblock content %}
